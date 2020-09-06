@@ -1,7 +1,6 @@
 ---
 on:
   push:
-    branches: master
     paths:
       - .releaserc.yml
       - package.json
