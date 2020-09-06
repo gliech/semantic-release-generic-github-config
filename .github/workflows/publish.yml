@@ -18,7 +18,7 @@ jobs:
           node-version: "12.x"
 
       - name: Update local package version
-        run: npm version --no-git-tag-version --from-git
+        run: npm --no-git-tag-version version ${{ github.ref }}
 
       - name: Publish to npm
         uses: JS-DevTools/npm-publish@v1
