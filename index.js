@@ -1,5 +1,6 @@
 const yaml = require("js-yaml")
-const fs = require("fs")
+const readFile = require("fs").readFileSync
+const resolve = require('path').resolve
 
-const inputfile = fs.readFileSync(".releaserc.yml", {encoding: "utf-8"})
+const inputfile = readFile(resolve(__dirname, ".releaserc.yml"), {encoding: "utf-8"})
 module.exports = yaml.load(inputfile)
