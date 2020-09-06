@@ -9,6 +9,8 @@ plugins:
           release: patch
         - type: deps
           release: patch
+        - type: chore
+          release: false
         - type: docs
           release: false
         - type: ci
@@ -69,6 +71,8 @@ plugins:
             section: Documentation
           - type: ci
             section: Continuous Integration
+          - type: chore
+            hidden: true
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
   - - "@semantic-release/git"
