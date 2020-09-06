@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - .releaserc.yml
+      - index.js
       - package.json
       - package-lock.json
       - .github/workflows/release.yml
