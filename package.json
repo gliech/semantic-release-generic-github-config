@@ -1,6 +1,6 @@
 {
   "name": "@gliech/semantic-release-generic-github-config",
-  "version": "0.0.0-dev",
+  "version": "0.0.0-development",
   "description": "semantic-release shareable configuration for generic (non npm) github projects",
   "repository": "github:gliech/semantic-release-generic-github-config",
   "author": "gliech",
@@ -11,7 +11,8 @@
   "keywords": [],
   "dependencies": {
     "@semantic-release/changelog": "^5.0.0",
-    "@semantic-release/git": "^9.0.0"
+    "@semantic-release/git": "^9.0.0",
+    "conventional-changelog-conventionalcommits": "^4.0.0"
   },
   "peerDependencies": {
     "semantic-release": "^17.0.0"
