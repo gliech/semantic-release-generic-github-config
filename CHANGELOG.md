@@ -1,3 +1,15 @@
+## [1.0.1]() (2020-09-06)
+
+
+### Bug Fixes
+
+* working entrypoint ([9bac8f3](https://github.com/gliech/semantic-release-generic-github-config/commit/9bac8f31f485b648f2ce1ca56cd1e542f5fdaae9))
+
+
+### Continuous Integration
+
+* **publish:** fix npm version command ([efc35e7](https://github.com/gliech/semantic-release-generic-github-config/commit/efc35e78415563d6d1d3b73844547bc9e6e58273))
+
 # 1.0.0 (2020-09-06)
 
 
