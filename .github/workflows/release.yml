@@ -1,0 +1,36 @@
+---
+on:
+  push:
+    branches: master
+    paths:
+      - .releaserc.yml
+      - package.json
+      - package-lock.json
+      - .github/workflows/release.yml
+name: release
+jobs:
+  release:
+    name: release on github
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create new release
+        run: npx semantic-release
+        env:
+          GIT_AUTHOR_NAME: ${{ github.actor }}
+          GIT_AUTHOR_EMAIL: ${{ github.actor }}@users.noreply.github.com
+          GIT_COMMITTER_NAME: ${{ github.actor }}
+          GIT_COMMITTER_EMAIL: ${{ github.actor }}@users.noreply.github.com
+          GITHUB_TOKEN: ${{ secrets.PA_TOKEN_PIPELINE }}

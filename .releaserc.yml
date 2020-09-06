@@ -1,0 +1,74 @@
+---
+plugins:
+  - - "@semantic-release/commit-analyzer"
+    - preset: conventionalcommits
+      releaseRules:
+        - type: feat
+          release: minor
+        - type: fix
+          release: patch
+        - type: docs
+          release: false
+        - type: ci
+          release: false
+  - - "@semantic-release/release-notes-generator"
+    - preset: conventionalcommits
+      writerOpts:
+        mainTemplate: |
+          {{> header}}
+
+          {{#each commitGroups}}
+
+          {{#if title}}
+          ### {{title}}
+
+          {{/if}}
+          {{#each commits}}
+          {{> commit root=@root}}
+          {{/each}}
+
+          {{/each}}
+          {{> footer}}
+        headerPartial: |
+          {{#if isPatch~}}
+            ##
+          {{~else~}}
+            #
+          {{~/if}} {{#if @root.linkCompare~}}
+            [{{version}}]({{compareUrlFormat}})
+          {{~else}}
+            {{~version}}
+          {{~/if}}
+          {{~#if title}} "{{title}}"
+          {{~/if}}
+          {{~#if date}} ({{date}})
+          {{/if}}
+        footerPartial: |
+          {{#if noteGroups}}
+          {{#each noteGroups}}
+
+          ### {{title}}
+
+          {{#each notes}}
+          * {{#if commit.scope}}**{{commit.scope}}:** {{/if}}{{text}}
+          {{/each}}
+          {{/each}}
+
+          {{/if}}
+      presetConfig:
+        types:
+          - type: feat
+            section: Features
+          - type: fix
+            section: Bug Fixes
+          - type: docs
+            section: Documentation
+          - type: ci
+            section: Continuous Integration
+  - - "@semantic-release/changelog"
+    - changelogFile: CHANGELOG.md
+  - - "@semantic-release/git"
+    - message: "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      assets:
+        - CHANGELOG.md
+  - "@semantic-release/github"
