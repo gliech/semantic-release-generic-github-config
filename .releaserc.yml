@@ -7,6 +7,8 @@ plugins:
           release: minor
         - type: fix
           release: patch
+        - type: deps
+          release: patch
         - type: docs
           release: false
         - type: ci
@@ -61,6 +63,8 @@ plugins:
             section: Features
           - type: fix
             section: Bug Fixes
+          - type: deps
+            section: Dependency Updates
           - type: docs
             section: Documentation
           - type: ci
