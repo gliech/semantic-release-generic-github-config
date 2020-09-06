@@ -1,3 +1,15 @@
+# [1.1.0]() (2020-09-06)
+
+
+### Features
+
+* explicit commit type **chore** ([6b9ae44](https://github.com/gliech/semantic-release-generic-github-config/commit/6b9ae44e0b0d67814390cf66956919dddc4ce628))
+
+
+### Continuous Integration
+
+* **publish:** revert to from-git publishing ([972eeb6](https://github.com/gliech/semantic-release-generic-github-config/commit/972eeb6fb4dbd8a9daae807b159523dafd52658b))
+
 ## [1.0.1]() (2020-09-06)
 
 
