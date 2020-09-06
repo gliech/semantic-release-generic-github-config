@@ -1,3 +1,10 @@
+## [1.1.1]() (2020-09-06)
+
+
+### Bug Fixes
+
+* path resolution for releaserc ([3b1c427](https://github.com/gliech/semantic-release-generic-github-config/commit/3b1c42723e1f5653faef01f0dd5308570626c68d))
+
 # [1.1.0]() (2020-09-06)
 
 
