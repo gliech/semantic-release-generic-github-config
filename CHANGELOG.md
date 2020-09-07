@@ -1,3 +1,10 @@
+## [1.1.2]() (2020-09-07)
+
+
+### Dependency Updates
+
+* include all missing semantic-release plugins ([1dc11a9](https://github.com/gliech/semantic-release-generic-github-config/commit/1dc11a99315fb5ee9d348817b136615b351edefa))
+
 ## [1.1.1]() (2020-09-06)
 
 
