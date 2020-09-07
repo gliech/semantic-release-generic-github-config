@@ -1,3 +1,15 @@
+# [1.2.0]() (2020-09-07)
+
+
+### Features
+
+* new release type **perf** ([432152a](https://github.com/gliech/semantic-release-generic-github-config/commit/432152a91def15c1ad08cd5b50d5121046a4f0dd))
+
+
+### Documentation
+
+* README.md ([02091b2](https://github.com/gliech/semantic-release-generic-github-config/commit/02091b210cabc20059e83db89f6b437b04a719c7))
+
 ## [1.1.2]() (2020-09-07)
 
 
