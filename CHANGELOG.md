@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.2.0...v1.2.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* gh compare links in headers ([e189e94](https://github.com/gliech/semantic-release-generic-github-config/commit/e189e94cce15d7e828c07497478ceeac1ae2915b))
+
 # [1.2.0]() (2020-09-07)
 
 
