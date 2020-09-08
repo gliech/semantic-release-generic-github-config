@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.2.1...v1.2.2) (2020-09-08)
+
+
+### Dependency Updates
+
+* bump @semantic-release/github from 7.0.7 to 7.1.1 ([ae70544](https://github.com/gliech/semantic-release-generic-github-config/commit/ae70544c93700ca5dee1e61abf010b7f7f6ab526))
+
 ## [1.2.1](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.2.0...v1.2.1) (2020-09-08)
 
 
