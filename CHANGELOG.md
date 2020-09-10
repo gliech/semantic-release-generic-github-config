@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.2.2...v1.3.0) (2020-09-10)
+
+
+### Features
+
+* add commit types **feature revert style refactor test build amend** ([726e9f1](https://github.com/gliech/semantic-release-generic-github-config/commit/726e9f193d2814e46044a13e743b4dbb14cff83d))
+
 ## [1.2.2](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.2.1...v1.2.2) (2020-09-08)
 
 
