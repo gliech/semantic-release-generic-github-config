@@ -1,4 +1,4 @@
-# @gliech/semantic-release-generic-github-config
+# [@gliech/semantic-release-generic-github-config][1]
 
 > **Disclaimer:** The *code* that exports the preset is pretty bad atm and the
 > whole package mainly exists so that I can use the preset in my own projects
@@ -20,3 +20,5 @@ the angular preset.
 ## License
 
 This project is licensed under the terms of the [BSD 4-Clause License](LICENSE)
+
+[1]: https://www.npmjs.com/package/@gliech/semantic-release-generic-github-config
