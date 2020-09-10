@@ -5,18 +5,32 @@ plugins:
       releaseRules:
         - type: feat
           release: minor
+        - type: feature
+          release: minor
         - type: fix
-          release: patch
-        - type: deps
           release: patch
         - type: perf
           release: patch
+        - type: revert
+          release: patch
+        - type: docs
+          release: false
+        - type: style
+          release: false
         - type: chore
           release: false
-        - type: docs
+        - type: refactor
+          release: patch
+        - type: test
+          release: false
+        - type: build
           release: false
         - type: ci
           release: false
+        - type: deps
+          release: patch
+        - type: amend
+          release: patch
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
       writerOpts:
@@ -77,17 +91,33 @@ plugins:
         types:
           - type: feat
             section: Features
+          - type: feature
+            section: Features
           - type: fix
             section: Bug Fixes
-          - type: deps
-            section: Dependency Updates
           - type: perf
             section: Performance Improvements
+          - type: revert
+            section: Reverts
           - type: docs
             section: Documentation
+          - type: style
+            section: Styles
+          - type: chore
+            section: Miscellaneous Chores
+            hidden: true
+          - type: refactor
+            section: Code Refactoring
+          - type: test
+            section: Tes
+          - type: build
+            section: Build System
           - type: ci
             section: Continuous Integration
-          - type: chore
+          - type: deps
+            section: Dependency Updates
+          - type: amend
+            section: Feature Amendments
             hidden: true
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
