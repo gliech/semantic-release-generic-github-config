@@ -109,7 +109,7 @@ plugins:
           - type: refactor
             section: Code Refactoring
           - type: test
-            section: Tes
+            section: Tests
           - type: build
             section: Build System
           - type: ci
