@@ -1,3 +1,15 @@
+## [1.3.1](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.3.0...v1.3.1) (2020-09-12)
+
+
+### Bug Fixes
+
+* test commit type section name ([7186fd0](https://github.com/gliech/semantic-release-generic-github-config/commit/7186fd0cd49a35df71766e04638d8b8b73f3f1d4))
+
+
+### Documentation
+
+* **readme:** link to npm package ([c116327](https://github.com/gliech/semantic-release-generic-github-config/commit/c116327eef07abc2deaca053e50699bedb656abc))
+
 # [1.3.0](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.2.2...v1.3.0) (2020-09-10)
 
 
