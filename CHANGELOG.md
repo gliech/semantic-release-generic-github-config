@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.3.1...v1.3.2) (2021-06-08)
+
+
+### Bug Fixes
+
+* **docs:** deprecation notice ([0d3bb7a](https://github.com/gliech/semantic-release-generic-github-config/commit/0d3bb7ad18c0931f1c3c4214fb1c9c2c1f89959b))
+
 ## [1.3.1](https://github.com/gliech/semantic-release-generic-github-config/compare/v1.3.0...v1.3.1) (2020-09-12)
 
 
